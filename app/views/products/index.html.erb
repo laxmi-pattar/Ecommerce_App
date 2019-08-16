@@ -2,8 +2,8 @@
 
 <h1>Products</h1>
 
-<table>
-  <thead>
+<table class="table table-bordered">
+  <thead class="thead-dark">
     <tr>
       <th>Title</th>
       <th>Description</th>
@@ -15,15 +15,15 @@
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
-        <td><%= product.title %></td>
-        <td><%= product.description %></td>
-        <td><%= product.price %></td>
-        <td><%= product.published %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= product.title %></td>
+      <td><%= product.description %></td>
+      <td><%= product.price %></td>
+      <td><%= product.published %></td>
+      <td><%= link_to 'Show', product %></td>
+      <td><%= link_to 'Edit', edit_product_path(product) %></td>
+      <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>

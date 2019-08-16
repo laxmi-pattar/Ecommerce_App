@@ -14,9 +14,10 @@
 	#	published: 'false')
 #end
 
-10.times do |i|
-	Category.create(name: "Category #{i}", 
-		description: "Category #{i}")
-end
+#10.times do |i|
+#	Category.create(name: "Category #{i}", 
+#		description: "Category #{i}")
+#end
+
 
 

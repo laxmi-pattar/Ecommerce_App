@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+<div>
+	<label for="">Title:</label>
+	<%= @product.title %>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+<div>
+	<label for="">Description:</label>
+	<%= @product.description %>
+</div>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+<div>
+	<label for="">Price:</label>
+	<%= @product.price %>
+</div>
 
-<p>
-  <strong>Published:</strong>
-  <%= @product.published %>
-</p>
+<div>
+	<label for="">Published:</label>
+	<%= @product.published %>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
